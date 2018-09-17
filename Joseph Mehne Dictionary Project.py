@@ -24,20 +24,17 @@ alien_0['y_position'] = alien_0['y_position'] + y_increment
 dice_list = [0,1,2,3,4,5,6,7,8,9,10,11,12]
 dice_roll = random.choice(dice_list)
 
-while a_speed == a_speed:
+while True:
     dice = input("Press r to roll the dice! Roll high enough and you'll get the alien!: ")
     if dice_roll == 12:
         print("Your rolled a 12! The alien is defeated!")
         break
     elif dice_roll >= 7 and not dice_roll == 12:
-        print("Great shot! One more hit should do it!")
-        break
+        print("Great shot! He should be dead soon!")
     elif dice_roll >= 1 and not dice_roll == 7:
         print("Not bad, but the alien isn't finished quite yet!")
-        break
     else:
         print("You rolled a 0 and missed your shot! It's now at " + str(alien_0['x_position']) + "," + str(alien_0['y_position']))
-        break
 
 #change speed to heatlh
 #loop code
