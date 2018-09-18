@@ -4,7 +4,8 @@ a_speed = input("What speed would you like the alien?(slow, medium, or fast): ")
 alien_0 = {
     'x_position': 1,
     'y_position': 26,
-    'speed': a_speed
+    'speed': a_speed,
+    'health': 12,
     }
 print("The alien is at " + str(alien_0['x_position']) + "," + str(alien_0['y_position']))
 
@@ -23,6 +24,9 @@ alien_0['y_position'] = alien_0['y_position'] + y_increment
 
 dice_list = [0,1,2,3,4,5,6,7,8,9,10,11,12]
 dice_roll = random.choice(dice_list)
+player_damage = dice_roll
+
+alien_0['health'] = alien_0['health'] - player_damage
 
 while True:
     dice = input("Press r to roll the dice! Roll high enough and you'll get the alien!: ")
@@ -35,6 +39,7 @@ while True:
         print("Not bad, but the alien isn't finished quite yet!")
     else:
         print("You rolled a 0 and missed your shot! It's now at " + str(alien_0['x_position']) + "," + str(alien_0['y_position']))
+
 
 #change speed to heatlh
 #loop code
