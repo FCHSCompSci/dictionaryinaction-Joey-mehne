@@ -60,10 +60,13 @@ while True:
 
     if alien_0['health'] <= 0:
         print("*" * 196)
+        print("* " * 98)
         time.sleep(1)
         print("*" * 196)
+        print("* " * 98)
         time.sleep(1)
         print("*" * 196)
+        print("* " * 98)
         time.sleep(1)
         print("")
         print("CONGRATS! The aliens lays bloody on the ground defeated. The human race has been saved by you, brave soldier!")
