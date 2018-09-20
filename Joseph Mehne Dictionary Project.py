@@ -1,3 +1,6 @@
+#Joseph Mehne
+#Dictionary Project
+
 import random
 import time
 
@@ -5,9 +8,13 @@ alien_0 = {
     'health': 25,
     }
 time.sleep(3)
-print("The aliens are coming for Earth! Act fast or the human race is doomed! Seems like they're controlled by a mothership. Get the dice of power and use your training to...")
 print("")
-time.sleep(4)
+print("The aliens are coming for Earth! Act fast or the human race is doomed!")
+print("")
+time.sleep(2)
+print("Seems like they're controlled by a mothership. Get the dice of power and use your training to...")
+print("")
+time.sleep(3.5)
 print("KILL...")
 print("")
 time.sleep(1.25)
@@ -38,21 +45,32 @@ while True:
     if dice_roll == 12:
         alien_damage()
         print("You rolled a 12! A critical hit if I've ever seen one!")
+        print("")
     elif dice_roll >= 7 and dice_roll <= 11:
         alien_damage()
         print("You rolled a %s, great shot! He should be dead soon!" % dice_roll)
+        print("")
     elif dice_roll >= 1 and dice_roll <= 6:
         alien_damage()
         print("You rolled a %s. Not bad, but the alien isn't finished quite yet!" % dice_roll)
+        print("")
     else:
         print("You rolled a 0 and missed your shot! ")
+        print("")
 
     if alien_0['health'] <= 0:
-        print("*" * 120)
-        print("*" * 120)
-        print("*" * 120)
-        print("Congrats! The alien lays bloody on the ground defeated. The human race has been saved by you brave soldier!")
+        print("*" * 196)
+        time.sleep(1)
+        print("*" * 196)
+        time.sleep(1)
+        print("*" * 196)
+        time.sleep(1)
+        print("")
+        print("CONGRATS! The aliens lays bloody on the ground defeated. The human race has been saved by you, brave soldier!")
         print("You Win!")
+        print("")
+        print("")
+        print("")
         break
 
 
