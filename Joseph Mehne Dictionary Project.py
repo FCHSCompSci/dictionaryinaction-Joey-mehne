@@ -39,6 +39,17 @@ def alien_damage():
 def new_health(alien):
     print("The alien's health has dropped to %s." % alien_damage)
 
+def end_line():
+    print(" *" * 98)
+    print("* " * 98)
+    time.sleep(1)
+    print(" *" * 98)
+    print("* " * 98)
+    time.sleep(1)
+    print(" *" * 98)
+    print("* " * 98)
+    time.sleep(1)
+
 while True:
     dice_roll = random.choice(dice_list)
     dice = input("Press r to roll the dice of power! Roll high enough and we'll be able to defeat the alien!: ")
@@ -59,17 +70,10 @@ while True:
         print("")
 
     if alien_0['health'] <= 0:
-        print("*" * 196)
-        print("* " * 98)
-        time.sleep(1)
-        print("*" * 196)
-        print("* " * 98)
-        time.sleep(1)
-        print("*" * 196)
-        print("* " * 98)
-        time.sleep(1)
+        end_line()
         print("")
-        print("CONGRATS! The aliens lays bloody on the ground defeated. The human race has been saved by you, brave soldier!")
+        print("CONGRATS! The aliens lay bloody on the ground defeated. The human race has been saved by you, brave soldier!")
+        print("")
         print("You Win!")
         print("")
         print("")
