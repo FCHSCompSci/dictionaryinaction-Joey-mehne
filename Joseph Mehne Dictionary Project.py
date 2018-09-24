@@ -36,9 +36,11 @@ alien_rolls = 0
 def alien_damage():
     alien_0['health'] = alien_0['health'] - dice_roll
 
+#this function returns the alien's new health
 def new_health(alien):
     print("The alien's health has dropped to %s." % alien_damage)
 
+#this function will print out the seperater lines when you win the game
 def end_line():
     print(" *" * 98)
     print("* " * 98)
@@ -80,10 +82,4 @@ while True:
         print("")
         break
 
-
-
-
-
-#change speed to heatlh
-#loop code
 #lets test some shiznet
